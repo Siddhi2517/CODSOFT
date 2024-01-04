@@ -10,7 +10,7 @@ public class Numbergame {
         Scanner sc = new Scanner(System.in);
         Random ra = new Random();
         int minRange = 1;
-        int maxRange = 10;
+        int maxRange = 20;
         int maxAttempts = 5;
         int score = 0;
         
@@ -36,17 +36,17 @@ public class Numbergame {
         		}
         			else if (guess < targetnum) 
         			{
-        				System.out.println("Guess is too low , try again");
+        				System.out.println("Guess is smaller than the actual number, try again");
         			}
         			else 
         			{
-        				System.out.println("Guess is too high , try again");
+        				System.out.println("Guess is greater than the actual number , try again");
        			}
         	
         }
         	if (!guesscorrectly) 
     		{
-    			System.out.println("You have reached the maximum number of attemots. correct number was " + targetnum);
+    			System.out.println("You have reached the maximum number of attempts. correct number was " + targetnum);
     		}
     		System.out.println("Do you want to play again ?(yes/no): ");
 	 	
